@@ -8,6 +8,7 @@ function FindProxyForURL(url, host) {
     if (
         // Exception for Portale FI 
         !shExpMatch(url, "*gwfi0gwcf01vs*") && 
+        !shExpMatch(url, "*salcls6341*") && 
         (shExpMatch(url, "*sede.corp.sanpaoloimi.com*") ||
         shExpMatch(url, "*websso.filiali.corp.sanpaoloimi.com*elkprod.sede.corp.sanpaoloimi.com*"))
     )
