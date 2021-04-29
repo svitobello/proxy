@@ -29,7 +29,7 @@ function FindProxyForURL(url, host) {
         shExpMatch(url, "*10\.31\.*")
        )
     {
-        return "PROXY 10.41.2.10:1199";
+        return "PROXY 10.41.2.12:1199";
     }
     
 // If URL has no dots in host name, send traffic direct.
