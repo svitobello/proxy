@@ -7,7 +7,7 @@ function FindProxyForURL(url, host) {
 // If IP address is Intesa PROD, send to VPN proxy PROD
     if (
         // Exception for Portale FI 
-        !shExpMatch(url, "*gwfi0gwcf01vs*") && 
+        !shExpMatch(url, "*gwfi0gwcf*") && 
         !shExpMatch(url, "*salcls6341*") && 
         (shExpMatch(url, "*sede.corp.sanpaoloimi.com*") ||
         shExpMatch(url, "*websso.filiali.corp.sanpaoloimi.com*elkprod.sede.corp.sanpaoloimi.com*"))
@@ -29,7 +29,7 @@ function FindProxyForURL(url, host) {
         shExpMatch(url, "*10\.31\.*")
        )
     {
-        return "PROXY 10.41.2.12:1199";
+        return "PROXY 10.30.51.5:9090";
     }
     
 // If URL has no dots in host name, send traffic direct.
