@@ -14,7 +14,7 @@ function FindProxyForURL(url, host) {
         shExpMatch(url, "*websso.filiali.corp.sanpaoloimi.com*elkprod.sede.corp.sanpaoloimi.com*"))
     )
     {
-        return "PROXY 10.41.2.11:1199";
+        return "PROXY 10.41.2.12:1199";
     }
     
 // If IP address is Intesa, send to VPN proxy TEST
