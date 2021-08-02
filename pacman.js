@@ -11,10 +11,11 @@ function FindProxyForURL(url, host) {
         !shExpMatch(url, "*gwfi0gwcf*") && 
         !shExpMatch(url, "*salcls6341*") && 
         (shExpMatch(url, "*sede.corp.sanpaoloimi.com*") ||
+        shExpMatch(url, "*previmedical.priv*") ||
         shExpMatch(url, "*websso.filiali.corp.sanpaoloimi.com*elkprod.sede.corp.sanpaoloimi.com*"))
     )
     {
-        return "PROXY 10.41.2.12:1199";
+        return "PROXY 10.41.2.11:1199";
     }
     
 // If IP address is Intesa, send to VPN proxy TEST
@@ -27,8 +28,7 @@ function FindProxyForURL(url, host) {
         shExpMatch(url, "*swwvm*")||
         shExpMatch(url, "*readlog*")||
         shExpMatch(url, "*192\.168\.143\.194*")||
-        shExpMatch(url, "*10\.31\.*") ||
-        shExpMatch(url, "*previmedical.priv*")
+        shExpMatch(url, "*10\.31\.*")
        )
     {
         return "PROXY 10.41.2.12:1199";
