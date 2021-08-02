@@ -27,7 +27,8 @@ function FindProxyForURL(url, host) {
         shExpMatch(url, "*swwvm*")||
         shExpMatch(url, "*readlog*")||
         shExpMatch(url, "*192\.168\.143\.194*")||
-        shExpMatch(url, "*10\.31\.*")
+        shExpMatch(url, "*10\.31\.*") ||
+        shExpMatch(url, "*previmedical.priv*")
        )
     {
         return "PROXY 10.41.2.12:1199";
